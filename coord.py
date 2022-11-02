@@ -26,11 +26,11 @@ class Coord(object):
         """
         Para calcular el hash de dos números, lo más sencillo es 
         calcular el hash de un tupla de esos dos números. Con eso no 
-        me tengo que preoucpar por calcular los hash de cad auno de ellos
+        me tengo que preoucpar por calcular los hash de cada uno de ellos
         y representar un total que tenga en cuenta el orden.
         
         Hemos aplicado **transforma y vencerás**, transformando dos números
-        en otra cosa para la cual ya tenemos el calculo del hecho, testado
+        en otra cosa para la cual ya tenemos el cálculo del hash hecho, testado
         y comprobado.
 
         El crear a un 'pringao' temporal al cual le endosamos un trabajo sucio
