@@ -22,11 +22,11 @@ def test_equality():
     assert c1 == Coord(2,4) # equivalentes
     assert c1 != c2         # diferentes
     assert Coord(2,3) != Coord(3,2) # el orden de los factores a veces í que altera el producto
-     
+
 
 
 def test_hash():
     """
-    Dos objetos iguales tiene que tener el mismo hash!
+    Dos objetos iguales tienen que tener el mismo hash!
     """
-    assert Coord(9,4).__hash__ == Coord(9,4).__hash__
+    assert Coord(9,4).__hash__() == Coord(9,4).__hash__()
