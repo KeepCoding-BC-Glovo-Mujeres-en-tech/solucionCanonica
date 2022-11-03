@@ -20,10 +20,14 @@ def test_valid_matrices():
     m2 = [[0,1],[1, 2]]
 
     r0 = [[0,0], [0,0]]
-    r1 = [[1.5,1.5,2.5,3.5]]
-    r2 = [[1,1.5],[1.5, 2]]
+    r1 = [[1.5,2.0,3,3.5]]
+    r2 = [[2/3,1],[1, 4/3]]
 
-    assert process_matrix(m0) == r0
-    assert process_matrix(m1) == r1
-    assert process_matrix(m2) == r2
-    
+    p0 = process_matrix(m0)
+    assert p0 == r0
+
+    p1 = process_matrix(m1)
+    assert p1 == r1
+
+    p2 = process_matrix(m2)
+    assert p2 == r2

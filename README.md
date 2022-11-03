@@ -40,3 +40,9 @@ Lo más lógico en este caso es la tercera opción. Puede parecer una tontería,
 
 Nosotros declararemos una clase Coord que tiene dos componentes, x e y.
 
+## Deberes
+
+Todo el contenido del fichero neighbours.py, en el fondo debería de ser un método de
+la clase `Coord`. Al fin y al cabo, lo que me gustaría es poder pedirle a un `Coord`
+cuales son sus vecinos y que me dé una lista con ellos. 
+Implementa el método `getNeighbours(self)` en `Coord`.

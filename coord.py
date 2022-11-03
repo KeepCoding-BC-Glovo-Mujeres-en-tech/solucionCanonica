@@ -10,7 +10,7 @@ class Coord(object):
         self.y = y
 
     def __repr__(self):
-        return f'<{self.__class__.__name__}: ({self.x}{self.y})>'
+        return f'<{self.__class__.__name__}: ({self.x} , {self.y})>'
 
     def __eq__(self, other):
         """
@@ -41,3 +41,11 @@ class Coord(object):
         Se podría haber hecho lo mismo en el caso de `__eq__`. 
         """
         return hash((self.x, self.y))
+
+
+    def inside(self, x_range, y_range):
+        """
+        Método que determina si un punto se halla dentro de una región. Para ello
+        recibe dos objetos range que indican el rango de las x y de las y.
+        """
+        return self.x in x_range and self.y in y_range

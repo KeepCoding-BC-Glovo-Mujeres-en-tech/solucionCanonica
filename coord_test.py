@@ -30,3 +30,14 @@ def test_hash():
     Dos objetos iguales tienen que tener el mismo hash!
     """
     assert Coord(9,4).__hash__() == Coord(9,4).__hash__()
+
+def test_inside():
+    x_range = range(3)
+    y_range = range(7)
+
+    assert Coord(0,0).inside(x_range, y_range)
+    assert Coord(2,6).inside(x_range, y_range)
+
+    assert Coord(-10,0).inside(x_range, y_range) == False
+    assert Coord(-1,7).inside(x_range, y_range) == False
+    assert Coord(4,0).inside(x_range, y_range) == False
