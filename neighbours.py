@@ -5,7 +5,7 @@ from coord import Coord
 def get_neighbours(coord, matrix):
     """
     Recibe las coordenadas de un elemento de una matriz y devuelve las coordenadas
-    de sus vecinos, como una lista de objetos Coord, siendo que el propio punto es 
+    de sus vecinos, como un set de objetos Coord, siendo que el propio punto es 
     cosniderado un vecino de si mismo.
     """
     # obtengo la lista de vecinos de forma simplona, considerando que se trata de un punto
@@ -13,9 +13,9 @@ def get_neighbours(coord, matrix):
     neighbours = _naive_get_neighbours(coord)
     # Elimino aquellos vecinos que tienen coordenadas fuera del rango de
     # la matriz (range(0, len(matrix)))
-    xrange = range(len(matrix))
-    yrange = range(len(matrix[0]))
-    neighbours = _remove_out_of_range(neighbours, xrange, yrange)
+    x_range = range(len(matrix))
+    y_range = range(len(matrix[0]))
+    neighbours = _remove_out_of_range(neighbours, x_range, y_range)
     # me añado a mi mismo y devuevlo
     neighbours.add(coord)
     return neighbours

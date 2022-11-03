@@ -45,4 +45,4 @@ Nosotros declararemos una clase Coord que tiene dos componentes, x e y.
 Todo el contenido del fichero neighbours.py, en el fondo debería de ser un método de
 la clase `Coord`. Al fin y al cabo, lo que me gustaría es poder pedirle a un `Coord`
 cuales son sus vecinos y que me dé una lista con ellos. 
-Implementa el método `getNeighbours(self)` en `Coord`.
+Implementa el método `getNeighbours(self)` en `Coord` y usa el método `inside` de `Coord` para saber si están dentro de una región (dos rangos).
